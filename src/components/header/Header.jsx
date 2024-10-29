@@ -63,13 +63,15 @@ const Header = () => {
 				</nav>
 
 				<div className='flex items-center space-x-6 text-white'>
-					<a href='/cart' className='relative'>
+					<a href='http://dung.io.vn/cart' className='relative'>
 						<MdOutlineAddShoppingCart className='text-3xl transition-colors hover:text-yellow-400' />
 						<span className='absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-xs font-bold text-gray-800 bg-yellow-400 rounded-full'>
 							2
 						</span>
 					</a>
-					<FaRegCircleUser className='text-3xl transition-colors hover:text-yellow-400' />
+					<a href='http://dung.io.vn/login'>
+						<FaRegCircleUser className='text-3xl transition-colors hover:text-yellow-400' />
+					</a>
 					<IoMdMenu className='text-3xl transition-colors cursor-pointer md:hidden hover:text-yellow-400' />
 				</div>
 			</div>
