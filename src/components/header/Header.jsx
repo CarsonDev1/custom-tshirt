@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineAddShoppingCart } from 'react-icons/md';
 import { IoIosArrowDown, IoMdMenu } from 'react-icons/io';
 import Logo from '../../assets/logo.png';
 import { FaRegCircleUser } from 'react-icons/fa6';
 
 const Header = () => {
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+	const toggleDropdown = () => {
+		setIsDropdownOpen(!isDropdownOpen);
+	};
+
 	return (
 		<header className='fixed top-0 left-0 z-50 w-full p-4 transition-all bg-[#343232] shadow-md'>
 			<div className='container flex items-center justify-between mx-auto'>
@@ -19,21 +25,34 @@ const Header = () => {
 					<a href='http://dung.io.vn/product-list' className='transition-colors hover:text-yellow-400'>
 						Sản Phẩm Mẫu
 					</a>
-					<div className='relative group'>
-						<a href='#' className='flex items-center transition-colors hover:text-yellow-400'>
+					<div className='relative'>
+						<a
+							href='#'
+							className='flex items-center transition-colors hover:text-yellow-400'
+							onClick={toggleDropdown}
+						>
 							Thông Tin <IoIosArrowDown className='ml-1' />
 						</a>
-						<ul className='absolute left-0 flex-col hidden p-4 mt-2 space-y-2 transition-all bg-gray-700 rounded shadow-lg group-hover:flex'>
-							<a
-								href='http://dung.io.vn/table-price'
-								className='text-white transition-colors hover:text-yellow-400'
-							>
-								Bảng Giá
-							</a>
-							<a href='#' className='text-white transition-colors hover:text-yellow-400'>
-								Bài Viết
-							</a>
-						</ul>
+						{isDropdownOpen && (
+							<ul className='absolute left-0 mt-2 space-y-2 transition-all duration-200 bg-gray-700 rounded shadow-lg'>
+								<li>
+									<a
+										href='http://dung.io.vn/table-price'
+										className='block px-4 py-2 text-white transition-colors hover:text-yellow-400'
+									>
+										Bảng Giá
+									</a>
+								</li>
+								<li>
+									<a
+										href='#'
+										className='block px-4 py-2 text-white transition-colors hover:text-yellow-400'
+									>
+										Bài Viết
+									</a>
+								</li>
+							</ul>
+						)}
 					</div>
 					<a href='http://dung.io.vn/posts' className='transition-colors hover:text-yellow-400'>
 						Tin Tức
