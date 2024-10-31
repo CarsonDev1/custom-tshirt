@@ -65,7 +65,7 @@ const Footer = () => {
 					<div className='mt-3'>
 						<h4 className='mb-2 text-base'>Follow Us</h4>
 						<div className='flex space-x-4'>
-							<a href='#'>
+							<a href='https://www.facebook.com/profile.php?id=61566002023966'>
 								<img
 									src={FooterFB}
 									width={24}
@@ -74,7 +74,7 @@ const Footer = () => {
 									className='hover:text-yellow-400'
 								/>
 							</a>
-							<a href='#'>
+							<a href='https://www.facebook.com/profile.php?id=61566002023966'>
 								<img
 									src={FooterIG}
 									width={24}
@@ -83,7 +83,7 @@ const Footer = () => {
 									className='hover:text-yellow-400'
 								/>
 							</a>
-							<a href='#'>
+							<a href='https://www.facebook.com/profile.php?id=61566002023966'>
 								<img
 									src={FooterX}
 									width={24}
