@@ -14,7 +14,7 @@ const Header = () => {
 	return (
 		<header className='fixed top-0 left-0 z-50 w-full p-4 transition-all bg-[#343232] shadow-md'>
 			<div className='container flex items-center justify-between mx-auto'>
-				<a href='http://dung.io.vn' className='h-20 w-52'>
+				<a href='https://wearyourway.shop' className='h-20 w-52'>
 					<img src={Logo} alt='Wear Your Way' className='object-contain w-full h-full' />
 				</a>
 
@@ -22,7 +22,7 @@ const Header = () => {
 					<a href='#' className='transition-colors hover:text-yellow-400'>
 						Thiết Kế
 					</a>
-					<a href='http://dung.io.vn/product-list' className='transition-colors hover:text-yellow-400'>
+					<a href='https://wearyourway.shop/product-list' className='transition-colors hover:text-yellow-400'>
 						Sản Phẩm Mẫu
 					</a>
 					<div className='relative'>
@@ -37,7 +37,7 @@ const Header = () => {
 							<ul className='absolute left-0 mt-2 space-y-2 transition-all duration-200 bg-gray-700 rounded shadow-lg'>
 								<li>
 									<a
-										href='http://dung.io.vn/table-price'
+										href='https://wearyourway.shop/table-price'
 										className='block px-4 py-2 text-white transition-colors hover:text-yellow-400'
 									>
 										Bảng Giá
@@ -54,22 +54,22 @@ const Header = () => {
 							</ul>
 						)}
 					</div>
-					<a href='http://dung.io.vn/posts' className='transition-colors hover:text-yellow-400'>
+					<a href='https://wearyourway.shop/posts' className='transition-colors hover:text-yellow-400'>
 						Tin Tức
 					</a>
-					<a href='http://dung.io.vn/about' className='transition-colors hover:text-yellow-400'>
+					<a href='https://wearyourway.shop/about' className='transition-colors hover:text-yellow-400'>
 						About Us
 					</a>
 				</nav>
 
 				<div className='flex items-center space-x-6 text-white'>
-					<a href='http://dung.io.vn/cart' className='relative'>
+					<a href='https://wearyourway.shop/cart' className='relative'>
 						<MdOutlineAddShoppingCart className='text-3xl transition-colors hover:text-yellow-400' />
 						<span className='absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-xs font-bold text-gray-800 bg-yellow-400 rounded-full'>
 							2
 						</span>
 					</a>
-					<a href='http://dung.io.vn/login'>
+					<a href='https://wearyourway.shop/login'>
 						<FaRegCircleUser className='text-3xl transition-colors hover:text-yellow-400' />
 					</a>
 					<IoMdMenu className='text-3xl transition-colors cursor-pointer md:hidden hover:text-yellow-400' />
